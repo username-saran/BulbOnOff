@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Bulb On-Off</title>
+     <style>
+          #button{
+               margin-top: 30px;
+               display: block;
+          }
+     </style>
+</head>
+<body>
+     <center>
+          <h2>Bulb</h2>
+          <img src="off.gif" alt="hi" id="image">
+          <button onclick="OnOff(event)" id="button">ON</button>
+          <script>
+               document.getElementById("button").innerText = "On";
+               function OnOff(event)
+               {
+                    if(document.getElementById("button").innerText == "On")
+                    {
+                         document.getElementById("image").src="on.gif";
+                         event.srcElement.innerText = "Off";
+                    }
+                    else{
+                         document.getElementById("image").src="off.gif";
+                         event.srcElement.innerText = "On";
+                    }
+               }
+          </script>
+     </center>
+</body>
+</html>
