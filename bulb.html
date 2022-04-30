@@ -17,21 +17,7 @@
           <h2>Bulb</h2>
           <img src="off.gif" alt="hi" id="image">
           <button onclick="OnOff(event)" id="button">ON</button>
-          <script>
-               document.getElementById("button").innerText = "On";
-               function OnOff(event)
-               {
-                    if(document.getElementById("button").innerText == "On")
-                    {
-                         document.getElementById("image").src="on.gif";
-                         event.srcElement.innerText = "Off";
-                    }
-                    else{
-                         document.getElementById("image").src="off.gif";
-                         event.srcElement.innerText = "On";
-                    }
-               }
-          </script>
+          <script src="bulb.js"></script>
      </center>
 </body>
 </html>
